@@ -8,7 +8,7 @@ namespace Catalog.API.Data
     {
         public static void SeedData(IMongoCollection<Product> productCollection)
         {
-            bool existProduct = productCollection.Find(p => true).Any();
+            bool existProduct = productCollection.FindSync(p => true).Any();
             if (!existProduct)
             {
                 productCollection.InsertManyAsync(GetPreconfiguredProducts());
