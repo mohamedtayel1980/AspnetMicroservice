@@ -37,6 +37,7 @@ namespace Basket.API
             services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>
                 (o => o.Address = new Uri(Configuration["GrpcSettings:DiscountUrl"]));
             services.AddScoped<DiscountGrpcService>();
+            //AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2Support", true);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
