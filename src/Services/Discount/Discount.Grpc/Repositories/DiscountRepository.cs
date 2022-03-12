@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Discount.Grpc.Repositories
 {
-    public class DiscountRepository: IDiscountRepository
+    public class DiscountRepository : IDiscountRepository
     {
         private readonly IConfiguration _configuration;
 
@@ -25,7 +25,7 @@ namespace Discount.Grpc.Repositories
                 ("SELECT * FROM Coupon WHERE ProductName = @ProductName", new { ProductName = productName });
 
             if (coupon == null)
-                return new Coupon
+                return new Coupon 
                 { ProductName = "No Discount", Amount = 0, Description = "No Discount Desc" };
 
             return coupon;
