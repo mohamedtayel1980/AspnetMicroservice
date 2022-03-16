@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{5BA8DEB5-EF7F-4771-AF5E-4714D078D90E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{6EC46D04-9531-44E3-8AD5-4FBAC17845B0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,10 +43,6 @@ Global
 		{745D9FA5-5B2C-4655-AEE8-1BFD2039F1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745D9FA5-5B2C-4655-AEE8-1BFD2039F1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745D9FA5-5B2C-4655-AEE8-1BFD2039F1B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EC46D04-9531-44E3-8AD5-4FBAC17845B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EC46D04-9531-44E3-8AD5-4FBAC17845B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EC46D04-9531-44E3-8AD5-4FBAC17845B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EC46D04-9531-44E3-8AD5-4FBAC17845B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,7 +50,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7D6A6128-60FD-4548-A1FA-67E04A0A34F0} = {420A80FB-C53C-4A5F-B68D-591756841525}
 		{745D9FA5-5B2C-4655-AEE8-1BFD2039F1B3} = {420A80FB-C53C-4A5F-B68D-591756841525}
-		{6EC46D04-9531-44E3-8AD5-4FBAC17845B0} = {5BA8DEB5-EF7F-4771-AF5E-4714D078D90E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3DC2EA8-BD83-46A1-9ED5-708EEAC2F830}
