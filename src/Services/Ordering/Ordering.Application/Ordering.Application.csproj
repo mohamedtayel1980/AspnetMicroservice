@@ -5,7 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Contracts\NewFolder\**" />
+    <EmbeddedResource Remove="Contracts\NewFolder\**" />
+    <None Remove="Contracts\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Ordering.Domain\Ordering.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Orders\Commands\" />
+    <Folder Include="Features\Orders\Queries\" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>
