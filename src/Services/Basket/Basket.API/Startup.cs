@@ -46,6 +46,7 @@ namespace Basket.API
             });
             services.AddMassTransitHostedService();
             //AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2Support", true);
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
